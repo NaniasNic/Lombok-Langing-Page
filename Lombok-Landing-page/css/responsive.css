@@ -1,0 +1,169 @@
+/* Ocultando Menu-mobile */
+header nav.menu-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    /* Ocultando Logo */
+    .logo{
+        opacity: 0;
+        cursor: default;
+    }
+
+    /* Ocultando Menu-desktop */
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    /* Menu-mobile */
+    header nav.menu-mobile{
+        display: block;
+    }
+
+    header nav.menu-mobile h2{
+        width: 100%;
+        line-height: 10px;
+        cursor: pointer;
+    }
+
+    header nav.menu-mobile ul{
+        width: 0;
+        height: 100vh;
+        transition: 1s;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        padding: 50px 0;
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+    }
+
+    header nav.menu-mobile ul li{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    header nav.menu-mobile ul li a{
+        color: #51574F;
+        text-decoration: none;
+    }
+
+    /* Cards */
+    .back-cards{
+        width: calc(100%/1);
+    }
+
+    .card{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    /* About */
+    section.about{
+        width: calc(100%/1);
+    }
+
+    section.about .about-img{
+        width: 100%;
+    }
+
+    section.about .about-info{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Subscribe */
+    section.sub .logo-sub h2{
+        font-size: 45px;
+    }
+
+    section.sub .logo-sub p{
+        font-size: 25px;
+    }
+
+    /* Footer */
+    footer{
+        width: calc(100%/1);
+        height: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    footer .contato{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .contato .icon{
+        width: 50%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    footer .contato .icon i{
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    footer .menu-final{
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer .menu-final ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    
+    footer .menu-final ul li{
+        margin-top: 10px;
+        float: none;
+    }
+    
+    footer .menu-final ul li a{
+        letter-spacing: 2px;
+        font-size: 25px;
+        color: #51574F;
+    }
+}
+
+@media screen and (max-width:680px) {
+    /* capa */
+    .capa{
+        width: 100%;
+    }
+
+    .capa h1{
+        font-size: 60px;
+    }
+
+    /* Subscribe */
+    section.sub .btn input{
+        width: 300px;
+    }
+
+    section.sub .enviar input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    /* capa */
+    .capa h1{
+        font-size: 40px;
+    }
+}

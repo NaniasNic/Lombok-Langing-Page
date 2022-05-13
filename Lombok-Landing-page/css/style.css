@@ -1,0 +1,298 @@
+/* Página */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+/* Variaveis Globais */
+.container{
+    width: 100%;
+    padding: 2% 2%;
+}
+
+/* Header do Site */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 10px solid white;
+}
+
+header > .container{
+    display: flex;
+}
+
+/* Logo */
+header .logo{
+    width: 100%;
+}
+
+header .logo h1{
+    text-transform: uppercase;
+    color: #51574F;
+    font-size: 40px;
+}
+
+/* Menu Desktop */
+nav.menu-desktop{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+nav.menu-desktop ul{
+    list-style: none;
+}
+
+nav.menu-desktop ul li{
+    display: flex;
+    float: left;
+    margin: 0 10px;
+}
+
+nav.menu-desktop ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #51574F;
+}
+
+/* Capa */
+.capa{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.capa h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #51574F;
+}
+
+.capa p{
+    font-size: 20px;
+    color: #51574F;
+    margin-bottom: 10px;
+}
+
+hr{
+    width: 70px;
+    border: none;
+    border-bottom: 2px solid #51574F;
+}
+
+/* Galeria */
+section.galery{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #F2F4F1;
+}
+
+/* Logo */
+.logo-galery{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-galery h2{
+    font-size: 40px;
+}
+
+.logo-galery hr{
+    margin-top: 10px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+/* Cards */
+.back-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 450px;
+    height: 500px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    box-shadow: 0 20px 30px 0 black;
+}
+
+.card hr{
+    width: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 70px;
+    margin-left: 210px;
+}
+
+.card img{
+    width: 100%;
+    height: 50%;
+}
+
+.card p{
+    text-align: center;
+    padding: 20px 80px;
+}
+
+/* About */
+section.about{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.about .about-img{
+    width: 50%;
+}
+
+section.about .about-img img{
+    width: 100%;
+    height: 500px;
+}
+
+section.about .about-info{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.about .about-info h2{
+    font-size: 30px;
+    color: #51574F;
+}
+
+section.about .about-info hr{
+    width: 50px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+section.about .about-info p{
+    margin-top: 50px;
+    padding: 0 70px;
+    color: #51574F;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+/* Subscribe */
+section.sub{
+    width: 100%;
+    height: 500px;
+    background-color: #F2F4F1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+section.sub .logo-sub h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #51574F;
+}
+
+section.sub .logo-sub p{
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #51574F;
+}
+
+section.sub .btn input{
+    width: 500px;
+    height: 55px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    background-color: #F2F4F1;
+    border: 4px solid white;
+}
+
+section.sub .enviar input{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: #F2F4F1;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .contato{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .contato .icon{
+    margin-left: 30px;
+}
+
+footer .contato .icon i{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+footer .menu-final {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+footer .menu-final ul{
+    list-style: none;
+    margin-right: 40px;
+}
+
+footer .menu-final ul li{
+    display: flex;
+    float: left;
+    margin: 0 20px;
+}
+
+footer .menu-final ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #51574F;
+}
